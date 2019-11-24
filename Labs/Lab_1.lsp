@@ -1,0 +1,16 @@
+(setf x 0)
+(setf a 3)
+(setf b 5)
+(setf c 7)
+(setf abs-b (abs(- 1 b)))
+(setf abs-a (abs(- 1 a)))
+(setf sin-c (sin(+ 1 c)))
+(setf cos-c (cos(+ 1 c)))
+
+(setf x-one (* abs-b abs-a))
+(setf x-two (* sin-c cos-c))
+(setf x-three (expt x-two -2))
+(setf x (/ x-one x-three))
+
+(print "Result of X:")
+(print x)
